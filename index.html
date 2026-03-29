@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tarang Kulkarni — General Manager, Political Consulting. Original research, program management, and executive assistancy for high-stakes environments." />
+  <title>Tarang Kulkarni — Political Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="cursor"      id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <a class="nav-logo" href="#top" aria-label="Tarang Kulkarni — Home">
+      <svg viewBox="0 0 380 72" width="190" height="36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display:block;">
+        <!-- Mark: square border -->
+        <rect x="4" y="4" width="64" height="64" fill="none" stroke="#8c6e18" stroke-width="1.5"/>
+        <!-- TK ligature: shared stem + crossbar + diagonals -->
+        <line x1="36" y1="15" x2="36" y2="57" fill="none" stroke="#8c6e18" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="15" y1="23" x2="36" y2="23" fill="none" stroke="#8c6e18" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="36" y1="36" x2="56" y2="15" fill="none" stroke="#8c6e18" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="36" y1="36" x2="56" y2="57" fill="none" stroke="#8c6e18" stroke-width="1.8" stroke-linecap="round"/>
+        <!-- Wordmark: name inherits currentColor for hover transition -->
+        <text x="88" y="32" fill="currentColor"
+          font-family="'Syne', system-ui, sans-serif"
+          font-size="17" font-weight="700" letter-spacing="2.8">TARANG KULKARNI</text>
+        <!-- Gold rule -->
+        <line x1="88" y1="40" x2="376" y2="40" fill="none" stroke="#8c6e18" stroke-width="0.75"/>
+        <!-- Subtitle -->
+        <text x="88" y="55" fill="#8c6e18"
+          font-family="'Syne', system-ui, sans-serif"
+          font-size="8.5" font-weight="600" letter-spacing="3.5">POLITICAL CONSULTING</text>
+      </svg>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">How I Work</a></li>
+      <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <header class="hero" id="top">
+    <div class="hero-mono" aria-hidden="true">TK</div>
+
+    <div class="hero-inner wrap">
+      <p class="eyebrow hero-eyebrow">General Manager &mdash; Political Consulting</p>
+
+      <h1 class="hero-headline">
+        Your campaign runs.<br/><em>Your decisions land.</em>
+      </h1>
+
+      <div class="hero-foot">
+        <div class="hero-foot-left">
+          <p class="hero-sub">
+            Research ready when you need it. Programs that don't stall.
+            Leadership support that clears the path. This is what
+            <strong>high-quality execution</strong> looks like in a
+            political environment where slowing down isn't an option.
+          </p>
+          <a href="#contact" class="btn btn-ink hero-cta-btn">
+            Let's Talk
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 8h12M9 3l5 5-5 5"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-scroll" aria-hidden="true">
+          <span class="hero-scroll-label">Scroll</span>
+          <div class="hero-scroll-track"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section class="about section-pad" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+
+        <div class="about-sticky reveal-l">
+          <p class="eyebrow">The Difference</p>
+          <h2 class="about-heading">Not advice.<br/><em>Results.</em></h2>
+          <p class="about-tag">MBA, IIFT Delhi &mdash; New Delhi</p>
+        </div>
+
+        <div class="about-copy reveal-r">
+          <p>Most consultants tell you what to do. I make sure it gets done.</p>
+          <p>
+            <strong>MBA from IIFT Delhi.</strong> High-level corporate experience.
+            Zero-to-one firm-building in live political environments. That combination
+            is rare — and it shows up in the work.
+          </p>
+          <p>
+            What you get: research that feeds decisions, programs that move,
+            and executive support that keeps leadership sharp. No fluff.
+            No disclaimers. Just outcomes.
+          </p>
+          <p>
+            General Manager of a political consulting firm providing 360-degree
+            advisory services to a national party — every aspect of election
+            management and strategy.
+          </p>
+
+          <div class="stats stagger">
+            <div class="stat">
+              <div class="stat-n">360°</div>
+              <div class="stat-l">Advisory Coverage</div>
+            </div>
+            <div class="stat">
+              <div class="stat-n">0→1</div>
+              <div class="stat-l">Built from Scratch</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════════ -->
+  <section class="services section-pad" id="services">
+    <div class="wrap">
+      <p class="eyebrow reveal">What I Offer</p>
+      <p class="services-intro reveal">Three capabilities. One standard — high quality, every time.</p>
+
+      <div class="services-grid stagger">
+
+        <div class="s-card">
+          <div class="s-num">01</div>
+          <h3 class="s-title">Original Research</h3>
+          <p class="s-lead">Decision-ready research on short timelines.</p>
+          <p class="s-desc">
+            A clear answer to a specific question. No hedging, no filler,
+            no background you didn't ask for. The right insight, delivered
+            fast, ready to act on.
+          </p>
+          <p class="s-outcome">Leadership walks into rooms informed. Decisions get made on real data.</p>
+        </div>
+
+        <div class="s-card">
+          <div class="s-num">02</div>
+          <h3 class="s-title">Program Management</h3>
+          <p class="s-lead">Complex programs, end-to-end ownership.</p>
+          <p class="s-desc">
+            Milestones set. Teams aligned. Progress tracked. Blockers cleared.
+            The program doesn't stall because someone isn't managing it —
+            it runs because someone is.
+          </p>
+          <p class="s-outcome">Workstreams that were stuck start moving. Deliverables land on time.</p>
+        </div>
+
+        <div class="s-card">
+          <div class="s-num">03</div>
+          <h3 class="s-title">Chief of Staff Support</h3>
+          <p class="s-lead">Senior leadership stays focused on what matters.</p>
+          <p class="s-desc">
+            High-trust support that anticipates needs, absorbs operational
+            complexity, and ensures the people who set direction aren't
+            buried in the details.
+          </p>
+          <p class="s-outcome">More bandwidth at the top. Fewer things falling through the cracks.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       HOW I WORK
+  ═══════════════════════════════════════════ -->
+  <section class="testimonials section-pad" id="process">
+    <div class="wrap">
+      <p class="eyebrow reveal">How I Work</p>
+
+      <div class="t-grid stagger">
+
+        <div class="t-card">
+          <div class="s-num" style="font-size:56px; margin-bottom:20px;">01</div>
+          <h3 class="s-title" style="font-size:24px; margin-bottom:12px;">Brief &amp; Scope</h3>
+          <p class="t-text" style="font-style:normal; font-size:14px;">
+            Every engagement starts with a direct conversation — what's the situation,
+            what outcome are we working toward, and by when. No discovery decks.
+            No onboarding calls that go nowhere. Just clarity on what needs to happen.
+          </p>
+        </div>
+
+        <div class="t-card">
+          <div class="s-num" style="font-size:56px; margin-bottom:20px;">02</div>
+          <h3 class="s-title" style="font-size:24px; margin-bottom:12px;">Execute</h3>
+          <p class="t-text" style="font-style:normal; font-size:14px;">
+            Research is delivered decision-ready. Programs are managed end to end.
+            Leadership is supported without friction. The work gets done at the standard
+            required — not the standard that's convenient.
+          </p>
+        </div>
+
+        <div class="t-card">
+          <div class="s-num" style="font-size:56px; margin-bottom:20px;">03</div>
+          <h3 class="s-title" style="font-size:24px; margin-bottom:12px;">Results, Not Reports</h3>
+          <p class="t-text" style="font-style:normal; font-size:14px;">
+            The measure is outcomes, not output. Decisions made. Programs unblocked.
+            Leadership freed up to lead. This is what working with someone who has
+            built from zero in a live political environment looks like.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CTA BAND (dark)
+  ═══════════════════════════════════════════ -->
+  <section class="cta-band">
+    <div class="wrap">
+      <div class="cta-band-inner">
+
+        <div class="cta-band-copy reveal-l">
+          <h2 class="cta-band-h">
+            High-stakes work needs<br/><em>high-quality execution.</em>
+          </h2>
+          <p class="cta-band-p">
+            Political environments don't forgive slow decisions or stalled
+            programs. If you need research that's ready, programs that run,
+            and leadership that's supported — this is the conversation to have.
+          </p>
+        </div>
+
+        <div class="cta-band-action reveal-r">
+          <a href="#contact" class="btn btn-dark">
+            Let's Talk
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 8h12M9 3l5 5-5 5"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section class="contact section-pad" id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+
+        <div class="contact-sticky reveal-l">
+          <p class="eyebrow">Let's Talk</p>
+          <h2 class="contact-h">Get in touch.<br/><em>Direct and fast.</em></h2>
+          <p class="contact-sub">
+            If the need is real, we move fast. Fill in the form and
+            expect a response within 24 hours.
+          </p>
+
+          <div class="c-details">
+            <div>
+              <p class="c-detail-label">Email</p>
+              <p class="c-detail-val">
+                <a href="mailto:hello@tarangkulkarni.com" style="color:inherit; border-bottom: 1px solid var(--border); padding-bottom:1px; transition: border-color .2s;">hello@tarangkulkarni.com</a>
+              </p>
+            </div>
+            <div>
+              <p class="c-detail-label">Location</p>
+              <p class="c-detail-val">New Delhi, India</p>
+            </div>
+            <div>
+              <p class="c-detail-label">Focus</p>
+              <p class="c-detail-val">Political Consulting &amp; Election Management</p>
+            </div>
+            <div>
+              <p class="c-detail-label">Availability</p>
+              <p class="c-detail-val">By referral and direct inquiry</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal-r">
+          <form class="form" id="contactForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-lbl" for="fname">Full Name</label>
+                <input class="form-input" type="text" id="fname" name="name"
+                  placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label class="form-lbl" for="org">Organisation</label>
+                <input class="form-input" type="text" id="org" name="org"
+                  placeholder="Party / firm / title" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-lbl" for="email">Email</label>
+              <input class="form-input" type="email" id="email" name="email"
+                placeholder="your@email.com" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-lbl" for="service">What do you need?</label>
+              <select class="form-select" id="service" name="service">
+                <option value="" disabled selected>Select a service</option>
+                <option value="research">Original Research</option>
+                <option value="programs">Program Management</option>
+                <option value="exec">Chief of Staff Support</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-lbl" for="msg">Context</label>
+              <textarea class="form-textarea" id="msg" name="message"
+                placeholder="Brief context — what's the situation, what needs to happen, by when."
+                required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-ink" id="submitBtn">
+                Send Message
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 8h12M9 3l5 5-5 5"/>
+                </svg>
+              </button>
+            </div>
+
+            <div class="form-success" id="formSuccess">
+              Message received — you'll hear back within 24 hours.
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-inner">
+        <span class="footer-name">Tarang Kulkarni</span>
+        <div class="footer-right">
+          <div>Political Consulting &mdash; New Delhi</div>
+          <div style="margin-top:4px">&copy; 2026. All rights reserved.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════════ -->
+  <script>
+    // ── Cursor ────────────────────────────────
+    const cur  = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+
+    (function loop() {
+      cur.style.left  = mx + 'px';
+      cur.style.top   = my + 'px';
+      rx += (mx - rx) * 0.13;
+      ry += (my - ry) * 0.13;
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
+      requestAnimationFrame(loop);
+    })();
+
+    document.querySelectorAll('a, button, input, textarea, select').forEach(el => {
+      el.addEventListener('mouseenter', () => { cur.classList.add('hover'); ring.classList.add('hover'); });
+      el.addEventListener('mouseleave', () => { cur.classList.remove('hover'); ring.classList.remove('hover'); });
+    });
+
+    // ── Nav scroll ────────────────────────────
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 48);
+    }, { passive: true });
+
+    // ── Mobile nav ────────────────────────────
+    const hbg   = document.getElementById('hamburger');
+    const links = document.getElementById('navLinks');
+    hbg.addEventListener('click', () => {
+      const open = hbg.classList.toggle('open');
+      links.classList.toggle('open', open);
+      hbg.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      hbg.classList.remove('open');
+      links.classList.remove('open');
+    }));
+
+    // ── Scroll reveal ─────────────────────────
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal, .reveal-l, .reveal-r, .stagger').forEach(el => io.observe(el));
+
+    // ── Smooth scroll (offset for fixed nav) ──
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const t = document.querySelector(a.getAttribute('href'));
+        if (!t) return;
+        e.preventDefault();
+        window.scrollTo({ top: t.getBoundingClientRect().top + scrollY - 76, behavior: 'smooth' });
+      });
+    });
+
+    // ── Contact form ──────────────────────────
+    const form    = document.getElementById('contactForm');
+    const success = document.getElementById('formSuccess');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      let valid = true;
+
+      ['fname', 'email', 'msg'].forEach(id => {
+        const f = document.getElementById(id);
+        if (!f.value.trim()) {
+          f.classList.add('form-error');
+          valid = false;
+          f.addEventListener('input', () => f.classList.remove('form-error'), { once: true });
+        }
+      });
+
+      if (!valid) return;
+
+      submitBtn.disabled = true;
+      submitBtn.style.opacity = '.5';
+
+      setTimeout(() => {
+        form.reset();
+        submitBtn.style.display = 'none';
+        success.classList.add('show');
+      }, 500);
+    });
+  </script>
+
+  <!-- ═══════════════════════════════════════════
+       WIDGETS
+  ═══════════════════════════════════════════ -->
+  <div id="wg">
+
+    <!-- ── Q&A Panel ── -->
+    <div id="cw-panel" role="complementary" aria-label="Chat with Tarang's assistant">
+      <div id="cw-head">
+        <div id="cw-head-info">
+          <div id="cw-avatar">TK</div>
+          <div>
+            <div id="cw-name">Ask Tarang</div>
+            <div id="cw-status"><span id="cw-dot"></span>Online</div>
+          </div>
+        </div>
+        <button id="cw-close" aria-label="Close chat">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M3 3l10 10M13 3L3 13"/>
+          </svg>
+        </button>
+      </div>
+      <div id="cw-msgs" role="log" aria-live="polite">
+        <div class="cw-msg cw-ai">Hi — I'm here to answer questions about Tarang's work, services, and approach. What would you like to know?</div>
+      </div>
+      <div id="cw-typing" aria-label="Typing" style="display:none;">
+        <span></span><span></span><span></span>
+      </div>
+      <div id="cw-foot">
+        <input id="cw-input" type="text" placeholder="Type a message…" autocomplete="off" maxlength="500" />
+        <button id="cw-send" aria-label="Send">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 8h12M9 3l5 5-5 5"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- ── Proposal Panel ── -->
+    <div id="pw-panel" role="complementary" aria-label="Get a proposal from Tarang">
+      <div id="pw-progress-wrap">
+        <div id="pw-progress-top">
+          <span id="pw-progress-label">Step <span id="pw-step-num">1</span> of 6</span>
+        </div>
+        <div id="pw-progress-track">
+          <div id="pw-progress-bar"></div>
+        </div>
+      </div>
+      <div id="pw-head">
+        <div id="pw-head-info">
+          <div id="pw-avatar">TK</div>
+          <div>
+            <div id="pw-name">Get a Proposal</div>
+            <div id="pw-status">Intake in progress</div>
+          </div>
+        </div>
+        <button id="pw-close" aria-label="Close proposal">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M3 3l10 10M13 3L3 13"/>
+          </svg>
+        </button>
+      </div>
+      <div id="pw-msgs" role="log" aria-live="polite"></div>
+      <div id="pw-typing" aria-label="Typing" style="display:none;">
+        <span></span><span></span><span></span>
+      </div>
+      <div id="pw-foot">
+        <input id="pw-input" type="text" placeholder="Type your answer…" autocomplete="off" maxlength="500" />
+        <button id="pw-send" aria-label="Send">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 8h12M9 3l5 5-5 5"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- ── Launchers ── -->
+    <div id="wg-launchers">
+      <button id="pw-toggle" aria-label="Get a proposal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+        </svg>
+        Get Proposal
+      </button>
+      <button id="cw-toggle" aria-label="Ask me anything">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+        </svg>
+        Ask me anything
+      </button>
+    </div>
+
+  </div>
+
+  <style>
+    /* ── Widget container ── */
+    #wg {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      z-index: 9000;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 12px;
+      font-family: 'DM Sans', system-ui, sans-serif;
+    }
+
+    /* ── Launcher stack ── */
+    #wg-launchers {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+    #cw-toggle, #pw-toggle {
+      display: flex; align-items: center; gap: 10px;
+      border: none;
+      padding: 14px 22px;
+      font-family: 'Syne', system-ui, sans-serif;
+      font-size: 12px; font-weight: 700;
+      letter-spacing: .14em; text-transform: uppercase;
+      cursor: pointer;
+      box-shadow: 0 4px 24px rgba(24,20,14,.22);
+      transition: background .2s, transform .15s;
+      white-space: nowrap;
+    }
+    #cw-toggle svg, #pw-toggle svg { width: 17px; height: 17px; flex-shrink: 0; }
+    /* Primary — ink */
+    #cw-toggle { background: #18140e; color: #f5f0e8; }
+    #cw-toggle:hover { background: #8c6e18; transform: translateY(-1px); }
+    /* Secondary — gold */
+    #pw-toggle { background: #8c6e18; color: #f5f0e8; }
+    #pw-toggle:hover { background: #7a5e12; transform: translateY(-1px); }
+
+    /* ── Shared panel base ── */
+    #cw-panel, #pw-panel {
+      width: 360px;
+      background: #f5f0e8;
+      border: 1px solid #ddd8cc;
+      box-shadow: 0 8px 48px rgba(24,20,14,.18);
+      display: flex; flex-direction: column;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(16px) scale(0.97);
+      pointer-events: none;
+      transition: opacity .25s ease, transform .25s ease;
+      transform-origin: bottom right;
+    }
+    #cw-panel.cw-open { opacity: 1; transform: translateY(0) scale(1); pointer-events: all; }
+    #pw-panel.pw-open { opacity: 1; transform: translateY(0) scale(1); pointer-events: all; }
+
+    /* ── Q&A Header ── */
+    #cw-head {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 18px;
+      background: #18140e;
+      color: #f5f0e8;
+      flex-shrink: 0;
+    }
+    #cw-head-info { display: flex; align-items: center; gap: 12px; }
+    #cw-avatar {
+      width: 36px; height: 36px;
+      background: #8c6e18; color: #f5f0e8;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 14px; font-weight: 600; flex-shrink: 0;
+    }
+    #cw-name {
+      font-family: 'Syne', system-ui, sans-serif;
+      font-size: 13px; font-weight: 700; letter-spacing: .08em; color: #f5f0e8;
+    }
+    #cw-status {
+      font-size: 11px; color: rgba(245,240,232,.5);
+      display: flex; align-items: center; gap: 5px; margin-top: 2px;
+    }
+    #cw-dot { width: 6px; height: 6px; background: #7ec87e; border-radius: 50%; display: inline-block; }
+    #cw-close, #pw-close {
+      background: none; border: none; color: rgba(245,240,232,.5);
+      cursor: pointer; padding: 4px; display: flex; align-items: center; transition: color .2s;
+    }
+    #cw-close:hover, #pw-close:hover { color: #f5f0e8; }
+    #cw-close svg, #pw-close svg { width: 14px; height: 14px; }
+
+    /* ── Progress bar (proposal only) ── */
+    #pw-progress-wrap {
+      background: #18140e;
+      padding: 10px 18px 11px;
+      flex-shrink: 0;
+    }
+    #pw-progress-top { margin-bottom: 7px; }
+    #pw-progress-label {
+      font-family: 'Syne', system-ui, sans-serif;
+      font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+      color: rgba(245,240,232,.5);
+    }
+    #pw-progress-label span { color: #f5f0e8; }
+    #pw-progress-track { height: 2px; background: rgba(245,240,232,.15); overflow: hidden; }
+    #pw-progress-bar { height: 100%; background: #8c6e18; width: 0%; transition: width .4s ease; }
+
+    /* ── Proposal Header ── */
+    #pw-head {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 18px;
+      background: #8c6e18; color: #f5f0e8; flex-shrink: 0;
+    }
+    #pw-head-info { display: flex; align-items: center; gap: 12px; }
+    #pw-avatar {
+      width: 36px; height: 36px;
+      background: rgba(245,240,232,.18); color: #f5f0e8;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 14px; font-weight: 600; flex-shrink: 0;
+    }
+    #pw-name {
+      font-family: 'Syne', system-ui, sans-serif;
+      font-size: 13px; font-weight: 700; letter-spacing: .08em; color: #f5f0e8;
+    }
+    #pw-status { font-size: 11px; color: rgba(245,240,232,.6); margin-top: 2px; }
+
+    /* ── Messages ── */
+    #cw-msgs, #pw-msgs {
+      flex: 1; overflow-y: auto;
+      padding: 18px 16px 8px;
+      display: flex; flex-direction: column; gap: 10px;
+      min-height: 220px; max-height: 290px;
+      scroll-behavior: smooth;
+    }
+    #cw-msgs::-webkit-scrollbar, #pw-msgs::-webkit-scrollbar { width: 4px; }
+    #cw-msgs::-webkit-scrollbar-track, #pw-msgs::-webkit-scrollbar-track { background: transparent; }
+    #cw-msgs::-webkit-scrollbar-thumb, #pw-msgs::-webkit-scrollbar-thumb { background: #ddd8cc; border-radius: 2px; }
+    .cw-msg { max-width: 86%; padding: 10px 14px; font-size: 13.5px; line-height: 1.6; word-break: break-word; }
+    .cw-ai { background: #ece6d8; color: #18140e; border: 1px solid #ddd8cc; align-self: flex-start; }
+    .cw-user { background: #18140e; color: #f5f0e8; align-self: flex-end; }
+    .cw-error { background: #f9ede8; color: #8b3a2a; border: 1px solid #e8cdc6; align-self: flex-start; font-size: 13px; }
+
+    /* ── Typing indicator ── */
+    #cw-typing, #pw-typing {
+      display: flex; align-items: center; gap: 4px;
+      padding: 10px 16px 4px; flex-shrink: 0;
+    }
+    #cw-typing span, #pw-typing span {
+      width: 6px; height: 6px; background: #c8c2b6;
+      border-radius: 50%; animation: cwBounce 1.2s ease-in-out infinite;
+    }
+    #cw-typing span:nth-child(1), #pw-typing span:nth-child(1) { animation-delay: 0s; }
+    #cw-typing span:nth-child(2), #pw-typing span:nth-child(2) { animation-delay: .2s; }
+    #cw-typing span:nth-child(3), #pw-typing span:nth-child(3) { animation-delay: .4s; }
+    @keyframes cwBounce {
+      0%, 60%, 100% { transform: translateY(0); opacity: .4; }
+      30%            { transform: translateY(-5px); opacity: 1; }
+    }
+
+    /* ── Input area ── */
+    #cw-foot, #pw-foot {
+      display: flex; align-items: center;
+      padding: 12px 14px; border-top: 1px solid #ddd8cc;
+      gap: 8px; flex-shrink: 0; background: #f5f0e8;
+    }
+    #cw-input, #pw-input {
+      flex: 1; background: #ece6d8; border: 1px solid #ddd8cc; color: #18140e;
+      font-family: 'DM Sans', system-ui, sans-serif; font-size: 13.5px;
+      padding: 10px 14px; outline: none; border-radius: 0;
+      transition: border-color .2s, box-shadow .2s; -webkit-appearance: none;
+    }
+    #cw-input::placeholder, #pw-input::placeholder { color: #a09890; }
+    #cw-input:focus, #pw-input:focus { border-color: #8c6e18; box-shadow: 0 0 0 2px rgba(140,110,24,.1); }
+    #cw-input:disabled, #pw-input:disabled { opacity: .5; cursor: not-allowed; }
+    #cw-send, #pw-send {
+      width: 40px; height: 40px; background: #18140e; color: #f5f0e8;
+      border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; transition: background .2s;
+    }
+    #cw-send:hover:not(:disabled), #pw-send:hover:not(:disabled) { background: #8c6e18; }
+    #cw-send:disabled, #pw-send:disabled { opacity: .4; cursor: not-allowed; }
+    #cw-send svg, #pw-send svg { width: 14px; height: 14px; }
+
+    /* ── Mobile ── */
+    @media (max-width: 480px) {
+      #wg { bottom: 16px; right: 16px; left: 16px; align-items: stretch; }
+      #cw-panel, #pw-panel { width: 100%; }
+      #cw-toggle, #pw-toggle { justify-content: center; }
+      #wg-launchers { align-items: stretch; }
+    }
+  </style>
+
+  <script>
+    (function () {
+      const launchers = document.getElementById('wg-launchers');
+      function hideLaunchers() { launchers.style.display = 'none'; }
+      function showLaunchers() { launchers.style.display = 'flex'; }
+
+      /* ════════════════════════════════════════
+         Q&A WIDGET
+      ════════════════════════════════════════ */
+      const cwPanel  = document.getElementById('cw-panel');
+      const cwToggle = document.getElementById('cw-toggle');
+      const cwClose  = document.getElementById('cw-close');
+      const cwMsgs   = document.getElementById('cw-msgs');
+      const cwTyping = document.getElementById('cw-typing');
+      const cwInput  = document.getElementById('cw-input');
+      const cwSendBtn = document.getElementById('cw-send');
+
+      let cwHistory = [], cwLoading = false;
+
+      function openQA() {
+        hideLaunchers();
+        cwPanel.classList.add('cw-open');
+        cwScrollBottom();
+        cwInput.focus();
+      }
+      function closeQA() { cwPanel.classList.remove('cw-open'); showLaunchers(); }
+
+      cwToggle.addEventListener('click', openQA);
+      cwClose.addEventListener('click', closeQA);
+
+      function cwScrollBottom() { requestAnimationFrame(() => { cwMsgs.scrollTop = cwMsgs.scrollHeight; }); }
+
+      function cwAppend(role, text) {
+        const d = document.createElement('div');
+        d.className = 'cw-msg ' + (role === 'user' ? 'cw-user' : role === 'error' ? 'cw-error' : 'cw-ai');
+        d.textContent = text;
+        cwMsgs.appendChild(d);
+        cwScrollBottom();
+      }
+
+      function cwSetLoading(on) {
+        cwLoading = on; cwSendBtn.disabled = on; cwInput.disabled = on;
+        cwTyping.style.display = on ? 'flex' : 'none';
+        cwScrollBottom(); if (!on) cwInput.focus();
+      }
+
+      async function cwSendMsg() {
+        const text = cwInput.value.trim();
+        if (!text || cwLoading) return;
+        cwAppend('user', text);
+        cwHistory.push({ role: 'user', content: text });
+        cwInput.value = '';
+        cwSetLoading(true);
+        try {
+          const res = await fetch('/api/chat', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ messages: cwHistory })
+          });
+          const data = await res.json();
+          if (!res.ok || data.error) throw new Error(data.error || 'Request failed');
+          cwHistory.push({ role: 'assistant', content: data.reply });
+          cwAppend('assistant', data.reply);
+        } catch (e) {
+          cwAppend('error', "Something went wrong on my end. Reach out directly — hello@tarangkulkarni.com");
+        } finally { cwSetLoading(false); }
+      }
+
+      cwSendBtn.addEventListener('click', cwSendMsg);
+      cwInput.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); cwSendMsg(); } });
+
+      /* ════════════════════════════════════════
+         PROPOSAL WIDGET
+      ════════════════════════════════════════ */
+      const pwPanel   = document.getElementById('pw-panel');
+      const pwToggle  = document.getElementById('pw-toggle');
+      const pwClose   = document.getElementById('pw-close');
+      const pwMsgs    = document.getElementById('pw-msgs');
+      const pwTyping  = document.getElementById('pw-typing');
+      const pwInput   = document.getElementById('pw-input');
+      const pwSendBtn = document.getElementById('pw-send');
+      const pwStepNum = document.getElementById('pw-step-num');
+      const pwBar     = document.getElementById('pw-progress-bar');
+      const pwStatus  = document.getElementById('pw-status');
+
+      let pwHistory = [], pwLoading = false, pwStarted = false, pwDone = false;
+
+      function pwUpdateStep(n) {
+        pwStepNum.textContent = n;
+        pwBar.style.width = (n / 6 * 100) + '%';
+      }
+
+      function pwScrollBottom() { requestAnimationFrame(() => { pwMsgs.scrollTop = pwMsgs.scrollHeight; }); }
+
+      function pwAppend(role, text) {
+        const d = document.createElement('div');
+        d.className = 'cw-msg ' + (role === 'user' ? 'cw-user' : role === 'error' ? 'cw-error' : 'cw-ai');
+        d.textContent = text;
+        pwMsgs.appendChild(d);
+        pwScrollBottom();
+      }
+
+      function pwSetLoading(on) {
+        pwLoading = on; pwSendBtn.disabled = on; pwInput.disabled = on;
+        pwTyping.style.display = on ? 'flex' : 'none';
+        pwScrollBottom(); if (!on && !pwDone) pwInput.focus();
+      }
+
+      async function pwCallAPI(messages) {
+        const res = await fetch('/api/chat', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages })
+        });
+        const data = await res.json();
+        if (!res.ok || data.error) throw new Error(data.error || 'Request failed');
+        return data;
+      }
+
+      async function pwAutoStart() {
+        pwSetLoading(true);
+        pwHistory.push({ role: 'user', content: "I'd like to get a proposal." });
+        try {
+          const data = await pwCallAPI(pwHistory);
+          pwHistory.push({ role: 'assistant', content: data.reply });
+          pwAppend('assistant', data.reply);
+          if (data.intake_step) pwUpdateStep(data.intake_step);
+        } catch (e) {
+          pwAppend('error', "Something went wrong. Reach out directly — hello@tarangkulkarni.com");
+        } finally { pwSetLoading(false); }
+      }
+
+      function openProposal() {
+        hideLaunchers();
+        pwPanel.classList.add('pw-open');
+        pwScrollBottom();
+        if (!pwStarted) { pwStarted = true; pwAutoStart(); }
+        else if (!pwDone) { pwInput.focus(); }
+      }
+      function closeProposal() { pwPanel.classList.remove('pw-open'); showLaunchers(); }
+
+      pwToggle.addEventListener('click', openProposal);
+      pwClose.addEventListener('click', closeProposal);
+
+      async function pwSendMsg() {
+        const text = pwInput.value.trim();
+        if (!text || pwLoading || pwDone) return;
+        pwAppend('user', text);
+        pwHistory.push({ role: 'user', content: text });
+        pwInput.value = '';
+        pwSetLoading(true);
+        try {
+          const data = await pwCallAPI(pwHistory);
+          pwHistory.push({ role: 'assistant', content: data.reply });
+          pwAppend('assistant', data.reply);
+          if (data.intake_step) pwUpdateStep(data.intake_step);
+          if (data.intake_complete) {
+            pwDone = true;
+            pwInput.disabled = true; pwSendBtn.disabled = true;
+            pwInput.placeholder = 'Proposal request sent';
+            pwStatus.textContent = 'Complete';
+            pwBar.style.width = '100%';
+            fetch('/api/generate-proposal', {
+              method: 'POST', headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ intake_data: data.intake_data, conversation: pwHistory })
+            }).catch(() => {});
+          }
+        } catch (e) {
+          pwAppend('error', "Something went wrong. Reach out directly — hello@tarangkulkarni.com");
+        } finally { pwSetLoading(false); }
+      }
+
+      pwSendBtn.addEventListener('click', pwSendMsg);
+      pwInput.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); pwSendMsg(); } });
+
+    })();
+  </script>
+</body>
+</html>

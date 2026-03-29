@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" width="340" height="80" role="img" aria-label="Tarang Kulkarni typographic logo">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400&amp;family=Syne:wght@600;700;800&amp;display=swap');
+      .t  { fill: currentColor; }
+      .gf { fill: #8c6e18; }
+      .gs { fill: none; stroke: #8c6e18; }
+    </style>
+  </defs>
+
+  <!-- ── LARGE ITALIC TK — left-buffered to prevent serif clip ── -->
+  <text class="gf" x="8" y="70"
+    font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+    font-size="68" font-weight="300" font-style="italic"
+    letter-spacing="-2">TK</text>
+
+  <!-- ── VERTICAL GOLD RULE ── -->
+  <line class="gs" x1="96" y1="10" x2="96" y2="72" stroke-width="1"/>
+
+  <!-- ── STACKED WORDMARK — vertically centred in rule height ── -->
+  <!-- First name — light weight, raised for optical balance -->
+  <text class="t" x="110" y="27"
+    font-family="'Syne', system-ui, -apple-system, sans-serif"
+    font-size="15" font-weight="600" letter-spacing="4.5">TARANG</text>
+
+  <!-- Thin separator rule -->
+  <line class="gs" x1="110" y1="36" x2="334" y2="36" stroke-width="0.6"/>
+
+  <!-- Last name — heavy weight, contrast with light above -->
+  <text class="t" x="110" y="55"
+    font-family="'Syne', system-ui, -apple-system, sans-serif"
+    font-size="15" font-weight="800" letter-spacing="3.2">KULKARNI</text>
+
+  <!-- Subtitle -->
+  <text class="gf" x="110" y="68"
+    font-family="'Syne', system-ui, -apple-system, sans-serif"
+    font-size="7.5" font-weight="600" letter-spacing="3">POLITICAL CONSULTING</text>
+</svg>

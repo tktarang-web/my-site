@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logo Options — Tarang Kulkarni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:  #f5f0e8;
+      --ink:    #18140e;
+      --gold:   #8c6e18;
+      --gold-d: #c4a84a;  /* brighter gold for dark bg */
+      --muted:  #7c7468;
+      --ui: 'Syne', system-ui, sans-serif;
+    }
+
+    body {
+      background: #111009;
+      color: #f0ebe0;
+      font-family: var(--ui);
+      padding: 64px 40px;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Page header ── */
+    .page-header { margin-bottom: 64px; }
+    .page-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 36px; font-weight: 300; font-style: italic;
+      color: #f0ebe0;
+      margin-bottom: 8px;
+    }
+    .page-sub {
+      font-size: 11px; font-weight: 600;
+      letter-spacing: .2em; text-transform: uppercase;
+      color: rgba(240,235,224,.4);
+    }
+
+    /* ── Logo block ── */
+    .logo-block { margin-bottom: 72px; }
+    .logo-block-label {
+      font-size: 10px; font-weight: 700;
+      letter-spacing: .22em; text-transform: uppercase;
+      color: var(--gold-d);
+      margin-bottom: 24px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .logo-block-label::after {
+      content: ''; flex: 1; height: 1px;
+      background: rgba(240,235,224,.1);
+    }
+    .logo-block-desc {
+      font-size: 12px; color: rgba(240,235,224,.4);
+      letter-spacing: .04em; margin-bottom: 28px;
+    }
+
+    /* ── Comparison grid ── */
+    .compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+    }
+
+    .swatch {
+      padding: 56px 48px;
+      display: flex; align-items: center;
+      position: relative;
+    }
+    .swatch-label {
+      position: absolute;
+      top: 16px; left: 20px;
+      font-size: 9px; font-weight: 600;
+      letter-spacing: .18em; text-transform: uppercase;
+      opacity: .35;
+    }
+
+    .swatch-light {
+      background: #ffffff;
+      color: var(--ink);
+    }
+    .swatch-light .swatch-label { color: var(--ink); }
+
+    .swatch-cream {
+      background: var(--cream);
+      color: var(--ink);
+    }
+    .swatch-cream .swatch-label { color: var(--ink); }
+
+    .swatch-dark {
+      background: var(--ink);
+      color: var(--cream);
+    }
+    .swatch-dark .swatch-label { color: var(--cream); }
+
+    .swatch-charcoal {
+      background: #2a2318;
+      color: var(--cream);
+    }
+    .swatch-charcoal .swatch-label { color: var(--cream); }
+
+    /* ── Inline SVG color adaptation ── */
+
+    /* Light swatches: ink text, standard gold */
+    .swatch-light svg .t,
+    .swatch-cream svg .t { fill: var(--ink); }
+
+    .swatch-light svg .gf,
+    .swatch-cream svg .gf { fill: var(--gold); }
+
+    .swatch-light svg .gs,
+    .swatch-cream svg .gs { stroke: var(--gold); }
+
+    /* Dark swatches: cream text, brighter gold */
+    .swatch-dark svg .t,
+    .swatch-charcoal svg .t { fill: #f0ebe0; }
+
+    .swatch-dark svg .gf,
+    .swatch-charcoal svg .gf { fill: var(--gold-d); }
+
+    .swatch-dark svg .gs,
+    .swatch-charcoal svg .gs { stroke: var(--gold-d); }
+
+    /* ── Divider ── */
+    .divider {
+      border: none; border-top: 1px solid rgba(240,235,224,.08);
+      margin: 0 0 72px;
+    }
+
+    /* ── Scale demos ── */
+    .scale-block { margin-bottom: 72px; }
+    .scale-row {
+      display: flex; align-items: center; gap: 40px;
+      padding: 24px 32px;
+      background: rgba(240,235,224,.03);
+      border: 1px solid rgba(240,235,224,.07);
+      margin-bottom: 2px;
+      flex-wrap: wrap;
+    }
+    .scale-row-label {
+      font-size: 9px; font-weight: 600;
+      letter-spacing: .2em; text-transform: uppercase;
+      color: rgba(240,235,224,.3);
+      min-width: 60px;
+    }
+
+    /* Scale SVG on dark for scale demos */
+    .scale-row svg .t  { fill: #f0ebe0; }
+    .scale-row svg .gf { fill: var(--gold-d); }
+    .scale-row svg .gs { stroke: var(--gold-d); }
+
+    @media (max-width: 640px) {
+      body { padding: 40px 20px; }
+      .compare { grid-template-columns: 1fr; }
+      .swatch { padding: 40px 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="page-header">
+    <h1 class="page-title">Logo Options</h1>
+    <p class="page-sub">Tarang Kulkarni &mdash; Brand Identity Review</p>
+  </header>
+
+  <!-- ════════════════════════════════════════
+       LOGO V1 — Mark + Wordmark
+  ════════════════════════════════════════ -->
+  <div class="logo-block">
+    <p class="logo-block-label">Option 01 &mdash; Mark + Wordmark</p>
+    <p class="logo-block-desc">Geometric TK ligature within a precise square frame. Clean sans wordmark with gold rule and subtitle.</p>
+
+    <div class="compare">
+
+      <div class="swatch swatch-light">
+        <span class="swatch-label">White</span>
+        <!-- Logo V1 inline -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 72" width="320" height="60">
+          <text class="t" x="88" y="32"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="17" font-weight="700" letter-spacing="2.8">TARANG KULKARNI</text>
+          <line class="gs" x1="88" y1="40" x2="370" y2="40" stroke-width="0.75" fill="none"/>
+          <text class="gf" x="88" y="55"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="8.5" font-weight="600" letter-spacing="3.5">POLITICAL CONSULTING</text>
+          <rect class="gs" x="4" y="4" width="64" height="64" stroke-width="1.5" fill="none"/>
+          <line class="gs" x1="36" y1="15" x2="36" y2="57" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+          <line class="gs" x1="15" y1="23" x2="36" y2="23" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+          <line class="gs" x1="36" y1="36" x2="56" y2="15" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+          <line class="gs" x1="36" y1="36" x2="56" y2="57" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        </svg>
+      </div>
+
+      <div class="swatch swatch-dark">
+        <span class="swatch-label">Dark</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 72" width="320" height="60">
+          <text class="t" x="88" y="32"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="17" font-weight="700" letter-spacing="2.8">TARANG KULKARNI</text>
+          <line class="gs" x1="88" y1="40" x2="370" y2="40" stroke-width="0.75" fill="none"/>
+          <text class="gf" x="88" y="55"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="8.5" font-weight="600" letter-spacing="3.5">POLITICAL CONSULTING</text>
+          <rect class="gs" x="4" y="4" width="64" height="64" stroke-width="1.5" fill="none"/>
+          <line class="gs" x1="36" y1="15" x2="36" y2="57" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+          <line class="gs" x1="15" y1="23" x2="36" y2="23" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+          <line class="gs" x1="36" y1="36" x2="56" y2="15" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+          <line class="gs" x1="36" y1="36" x2="56" y2="57" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        </svg>
+      </div>
+
+      <div class="swatch swatch-cream">
+        <span class="swatch-label">Cream</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 72" width="320" height="60">
+          <text class="t" x="88" y="32"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="17" font-weight="700" letter-spacing="2.8">TARANG KULKARNI</text>
+          <line class="gs" x1="88" y1="40" x2="370" y2="40" stroke-width="0.75" fill="none"/>
+          <text class="gf" x="88" y="55"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="8.5" font-weight="600" letter-spacing="3.5">POLITICAL CONSULTING</text>
+          <rect class="gs" x="4" y="4" width="64" height="64" stroke-width="1.5" fill="none"/>
+          <line class="gs" x1="36" y1="15" x2="36" y2="57" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+          <line class="gs" x1="15" y1="23" x2="36" y2="23" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+          <line class="gs" x1="36" y1="36" x2="56" y2="15" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+          <line class="gs" x1="36" y1="36" x2="56" y2="57" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        </svg>
+      </div>
+
+      <div class="swatch swatch-charcoal">
+        <span class="swatch-label">Charcoal</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 72" width="320" height="60">
+          <text class="t" x="88" y="32"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="17" font-weight="700" letter-spacing="2.8">TARANG KULKARNI</text>
+          <line class="gs" x1="88" y1="40" x2="370" y2="40" stroke-width="0.75" fill="none"/>
+          <text class="gf" x="88" y="55"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="8.5" font-weight="600" letter-spacing="3.5">POLITICAL CONSULTING</text>
+          <rect class="gs" x="4" y="4" width="64" height="64" stroke-width="1.5" fill="none"/>
+          <line class="gs" x1="36" y1="15" x2="36" y2="57" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+          <line class="gs" x1="15" y1="23" x2="36" y2="23" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+          <line class="gs" x1="36" y1="36" x2="56" y2="15" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+          <line class="gs" x1="36" y1="36" x2="56" y2="57" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        </svg>
+      </div>
+
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- ════════════════════════════════════════
+       LOGO V2 — Typographic
+  ════════════════════════════════════════ -->
+  <div class="logo-block">
+    <p class="logo-block-label">Option 02 &mdash; Typographic</p>
+    <p class="logo-block-desc">Large italic TK in display serif (gold) paired with stacked wordmark — light and heavy weight contrast, vertical gold rule separator.</p>
+
+    <div class="compare">
+
+      <div class="swatch swatch-light">
+        <span class="swatch-label">White</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" width="280" height="70">
+          <text class="gf" x="8" y="70"
+            font-family="'Cormorant Garamond', Georgia, serif"
+            font-size="68" font-weight="300" font-style="italic" letter-spacing="-2">TK</text>
+          <line class="gs" x1="96" y1="10" x2="96" y2="72" stroke-width="1" fill="none"/>
+          <text class="t" x="110" y="27"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="15" font-weight="600" letter-spacing="4.5">TARANG</text>
+          <line class="gs" x1="110" y1="36" x2="334" y2="36" stroke-width="0.6" fill="none"/>
+          <text class="t" x="110" y="55"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="15" font-weight="800" letter-spacing="3.2">KULKARNI</text>
+          <text class="gf" x="110" y="68"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="7.5" font-weight="600" letter-spacing="3">POLITICAL CONSULTING</text>
+        </svg>
+      </div>
+
+      <div class="swatch swatch-dark">
+        <span class="swatch-label">Dark</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" width="280" height="70">
+          <text class="gf" x="8" y="70"
+            font-family="'Cormorant Garamond', Georgia, serif"
+            font-size="68" font-weight="300" font-style="italic" letter-spacing="-2">TK</text>
+          <line class="gs" x1="96" y1="10" x2="96" y2="72" stroke-width="1" fill="none"/>
+          <text class="t" x="110" y="27"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="15" font-weight="600" letter-spacing="4.5">TARANG</text>
+          <line class="gs" x1="110" y1="36" x2="334" y2="36" stroke-width="0.6" fill="none"/>
+          <text class="t" x="110" y="55"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="15" font-weight="800" letter-spacing="3.2">KULKARNI</text>
+          <text class="gf" x="110" y="68"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="7.5" font-weight="600" letter-spacing="3">POLITICAL CONSULTING</text>
+        </svg>
+      </div>
+
+      <div class="swatch swatch-cream">
+        <span class="swatch-label">Cream</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" width="280" height="70">
+          <text class="gf" x="8" y="70"
+            font-family="'Cormorant Garamond', Georgia, serif"
+            font-size="68" font-weight="300" font-style="italic" letter-spacing="-2">TK</text>
+          <line class="gs" x1="96" y1="10" x2="96" y2="72" stroke-width="1" fill="none"/>
+          <text class="t" x="110" y="27"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="15" font-weight="600" letter-spacing="4.5">TARANG</text>
+          <line class="gs" x1="110" y1="36" x2="334" y2="36" stroke-width="0.6" fill="none"/>
+          <text class="t" x="110" y="55"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="15" font-weight="800" letter-spacing="3.2">KULKARNI</text>
+          <text class="gf" x="110" y="68"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="7.5" font-weight="600" letter-spacing="3">POLITICAL CONSULTING</text>
+        </svg>
+      </div>
+
+      <div class="swatch swatch-charcoal">
+        <span class="swatch-label">Charcoal</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" width="280" height="70">
+          <text class="gf" x="8" y="70"
+            font-family="'Cormorant Garamond', Georgia, serif"
+            font-size="68" font-weight="300" font-style="italic" letter-spacing="-2">TK</text>
+          <line class="gs" x1="96" y1="10" x2="96" y2="72" stroke-width="1" fill="none"/>
+          <text class="t" x="110" y="27"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="15" font-weight="600" letter-spacing="4.5">TARANG</text>
+          <line class="gs" x1="110" y1="36" x2="334" y2="36" stroke-width="0.6" fill="none"/>
+          <text class="t" x="110" y="55"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="15" font-weight="800" letter-spacing="3.2">KULKARNI</text>
+          <text class="gf" x="110" y="68"
+            font-family="'Syne', system-ui, sans-serif"
+            font-size="7.5" font-weight="600" letter-spacing="3">POLITICAL CONSULTING</text>
+        </svg>
+      </div>
+
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- ════════════════════════════════════════
+       SCALE REFERENCE
+  ════════════════════════════════════════ -->
+  <div class="scale-block">
+    <p class="logo-block-label">Scale Reference</p>
+    <p class="logo-block-desc">Both logos at various sizes — small, standard, large.</p>
+
+    <!-- V1 scales -->
+    <div class="scale-row">
+      <span class="scale-row-label">V1 · Small</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 72" width="190" height="36">
+        <text class="t" x="88" y="32" font-family="'Syne',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="2.8">TARANG KULKARNI</text>
+        <line class="gs" x1="88" y1="40" x2="370" y2="40" stroke-width="0.75" fill="none"/>
+        <text class="gf" x="88" y="55" font-family="'Syne',system-ui,sans-serif" font-size="8.5" font-weight="600" letter-spacing="3.5">POLITICAL CONSULTING</text>
+        <rect class="gs" x="4" y="4" width="64" height="64" stroke-width="1.5" fill="none"/>
+        <line class="gs" x1="36" y1="15" x2="36" y2="57" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <line class="gs" x1="15" y1="23" x2="36" y2="23" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <line class="gs" x1="36" y1="36" x2="56" y2="15" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <line class="gs" x1="36" y1="36" x2="56" y2="57" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      </svg>
+    </div>
+    <div class="scale-row">
+      <span class="scale-row-label">V1 · Standard</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 72" width="320" height="60">
+        <text class="t" x="88" y="32" font-family="'Syne',system-ui,sans-serif" font-size="17" font-weight="700" letter-spacing="2.8">TARANG KULKARNI</text>
+        <line class="gs" x1="88" y1="40" x2="370" y2="40" stroke-width="0.75" fill="none"/>
+        <text class="gf" x="88" y="55" font-family="'Syne',system-ui,sans-serif" font-size="8.5" font-weight="600" letter-spacing="3.5">POLITICAL CONSULTING</text>
+        <rect class="gs" x="4" y="4" width="64" height="64" stroke-width="1.5" fill="none"/>
+        <line class="gs" x1="36" y1="15" x2="36" y2="57" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <line class="gs" x1="15" y1="23" x2="36" y2="23" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <line class="gs" x1="36" y1="36" x2="56" y2="15" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <line class="gs" x1="36" y1="36" x2="56" y2="57" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      </svg>
+    </div>
+
+    <!-- V2 scales -->
+    <div class="scale-row" style="margin-top:16px">
+      <span class="scale-row-label">V2 · Small</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" width="160" height="40">
+        <text class="gf" x="8" y="70" font-family="'Cormorant Garamond',Georgia,serif" font-size="68" font-weight="300" font-style="italic" letter-spacing="-2">TK</text>
+        <line class="gs" x1="96" y1="10" x2="96" y2="72" stroke-width="1" fill="none"/>
+        <text class="t" x="110" y="27" font-family="'Syne',system-ui,sans-serif" font-size="15" font-weight="600" letter-spacing="4.5">TARANG</text>
+        <line class="gs" x1="110" y1="36" x2="334" y2="36" stroke-width="0.6" fill="none"/>
+        <text class="t" x="110" y="55" font-family="'Syne',system-ui,sans-serif" font-size="15" font-weight="800" letter-spacing="3.2">KULKARNI</text>
+        <text class="gf" x="110" y="68" font-family="'Syne',system-ui,sans-serif" font-size="7.5" font-weight="600" letter-spacing="3">POLITICAL CONSULTING</text>
+      </svg>
+    </div>
+    <div class="scale-row">
+      <span class="scale-row-label">V2 · Standard</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" width="280" height="70">
+        <text class="gf" x="8" y="70" font-family="'Cormorant Garamond',Georgia,serif" font-size="68" font-weight="300" font-style="italic" letter-spacing="-2">TK</text>
+        <line class="gs" x1="96" y1="10" x2="96" y2="72" stroke-width="1" fill="none"/>
+        <text class="t" x="110" y="27" font-family="'Syne',system-ui,sans-serif" font-size="15" font-weight="600" letter-spacing="4.5">TARANG</text>
+        <line class="gs" x1="110" y1="36" x2="334" y2="36" stroke-width="0.6" fill="none"/>
+        <text class="t" x="110" y="55" font-family="'Syne',system-ui,sans-serif" font-size="15" font-weight="800" letter-spacing="3.2">KULKARNI</text>
+        <text class="gf" x="110" y="68" font-family="'Syne',system-ui,sans-serif" font-size="7.5" font-weight="600" letter-spacing="3">POLITICAL CONSULTING</text>
+      </svg>
+    </div>
+
+  </div>
+
+</body>
+</html>

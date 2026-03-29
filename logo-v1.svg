@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 72" width="380" height="72" role="img" aria-label="Tarang Kulkarni logo">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&amp;display=swap');
+      .t  { fill: currentColor; font-family: 'Syne', system-ui, -apple-system, sans-serif; }
+      .gf { fill: #8c6e18; }
+      .gs { fill: none; stroke: #8c6e18; }
+    </style>
+  </defs>
+
+  <!-- ── MARK ── -->
+  <!-- Outer square -->
+  <rect class="gs" x="4" y="4" width="64" height="64" stroke-width="1.5"/>
+
+  <!-- TK geometric ligature (shared vertical stem) -->
+  <g class="gs" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Shared vertical stem (T's downstroke + K's spine) -->
+    <line x1="36" y1="15" x2="36" y2="57"/>
+    <!-- T crossbar (left only — right is the shared stem) -->
+    <line x1="15" y1="23" x2="36" y2="23"/>
+    <!-- K upper diagonal -->
+    <line x1="36" y1="36" x2="56" y2="15"/>
+    <!-- K lower diagonal -->
+    <line x1="36" y1="36" x2="56" y2="57"/>
+  </g>
+
+  <!-- ── WORDMARK ── -->
+  <!-- Name -->
+  <text class="t" x="88" y="32"
+    font-size="17" font-weight="700" letter-spacing="2.8">TARANG KULKARNI</text>
+
+  <!-- Thin gold rule -->
+  <line class="gs" x1="88" y1="40" x2="376" y2="40" stroke-width="0.75"/>
+
+  <!-- Subtitle -->
+  <text class="gf" x="88" y="55"
+    font-family="'Syne', system-ui, sans-serif"
+    font-size="8.5" font-weight="600" letter-spacing="3.5">POLITICAL CONSULTING</text>
+</svg>
