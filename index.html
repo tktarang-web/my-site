@@ -7,38 +7,18 @@
   <title>Tarang Kulkarni — Political Consulting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <div class="cursor"      id="cursor"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
 
   <!-- ═══════════════════════════════════════════
        NAV
   ═══════════════════════════════════════════ -->
   <nav class="nav" id="nav">
     <a class="nav-logo" href="#top" aria-label="Tarang Kulkarni — Home">
-      <svg viewBox="0 0 380 72" width="190" height="36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display:block;">
-        <!-- Mark: square border -->
-        <rect x="4" y="4" width="64" height="64" fill="none" stroke="#8c6e18" stroke-width="1.5"/>
-        <!-- TK ligature: shared stem + crossbar + diagonals -->
-        <line x1="36" y1="15" x2="36" y2="57" fill="none" stroke="#8c6e18" stroke-width="1.8" stroke-linecap="round"/>
-        <line x1="15" y1="23" x2="36" y2="23" fill="none" stroke="#8c6e18" stroke-width="1.8" stroke-linecap="round"/>
-        <line x1="36" y1="36" x2="56" y2="15" fill="none" stroke="#8c6e18" stroke-width="1.8" stroke-linecap="round"/>
-        <line x1="36" y1="36" x2="56" y2="57" fill="none" stroke="#8c6e18" stroke-width="1.8" stroke-linecap="round"/>
-        <!-- Wordmark: name inherits currentColor for hover transition -->
-        <text x="88" y="32" fill="currentColor"
-          font-family="'Syne', system-ui, sans-serif"
-          font-size="17" font-weight="700" letter-spacing="2.8">TARANG KULKARNI</text>
-        <!-- Gold rule -->
-        <line x1="88" y1="40" x2="376" y2="40" fill="none" stroke="#8c6e18" stroke-width="0.75"/>
-        <!-- Subtitle -->
-        <text x="88" y="55" fill="#8c6e18"
-          font-family="'Syne', system-ui, sans-serif"
-          font-size="8.5" font-weight="600" letter-spacing="3.5">POLITICAL CONSULTING</text>
-      </svg>
+      <div class="nav-mark">TK</div>
+      <span class="nav-name">Tarang Kulkarni</span>
     </a>
 
     <ul class="nav-links" id="navLinks">
@@ -57,35 +37,45 @@
        HERO
   ═══════════════════════════════════════════ -->
   <header class="hero" id="top">
-    <div class="hero-mono" aria-hidden="true">TK</div>
+    <div class="hero-watermark" aria-hidden="true">TK</div>
 
-    <div class="hero-inner wrap">
-      <p class="eyebrow hero-eyebrow">General Manager &mdash; Political Consulting</p>
-
+    <div class="hero-main wrap">
       <h1 class="hero-headline">
-        Strategy is set.<br/><em>Now it has to run.</em>
+        Strategy<br/>is set.<br/><em>Now it</em><br/><em>has to run.</em>
       </h1>
 
-      <div class="hero-foot">
-        <div class="hero-foot-left">
-          <p class="hero-sub">
-            Research delivered in days, not months. Programs that don't stall.
-            Leadership support that keeps the people setting direction
-            sharp and unburied. The gap between strategy and delivery —
-            <strong>that's where I work.</strong>
-          </p>
-          <a href="#contact" class="btn btn-ink hero-cta-btn">
-            Let's Talk
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2 8h12M9 3l5 5-5 5"/>
-            </svg>
-          </a>
-        </div>
+      <div class="hero-side">
+        <p class="eyebrow">General Manager &mdash; Political Consulting</p>
+        <p class="hero-sub">
+          Research delivered in days, not months. Programs that don't stall.
+          Leadership support that keeps the people setting direction sharp and
+          unburied. The gap between strategy and delivery — that's where I work.
+        </p>
+        <a href="#contact" class="btn-primary">
+          Let's Talk
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 8h12M9 3l5 5-5 5"/>
+          </svg>
+        </a>
+      </div>
+    </div>
 
-        <div class="hero-scroll" aria-hidden="true">
-          <span class="hero-scroll-label">Scroll</span>
-          <div class="hero-scroll-track"></div>
-        </div>
+    <div class="hero-stats wrap">
+      <div class="hero-stat">
+        <div class="hero-stat-n">360°</div>
+        <div class="hero-stat-l">Advisory Coverage</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-n">3</div>
+        <div class="hero-stat-l">Core Services</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-n">0→1</div>
+        <div class="hero-stat-l">Built from Scratch</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-n">National</div>
+        <div class="hero-stat-l">Party Client</div>
       </div>
     </div>
   </header>
@@ -95,12 +85,26 @@
   ═══════════════════════════════════════════ -->
   <section class="about section-pad" id="about">
     <div class="wrap">
-      <div class="about-grid">
 
-        <div class="about-sticky reveal-l">
-          <p class="eyebrow">The Difference</p>
-          <h2 class="about-heading">Not advice.<br/><em>Results.</em></h2>
-          <p class="about-tag">MBA, IIFT Delhi &mdash; New Delhi</p>
+      <div class="about-intro reveal">
+        <h2 class="about-h2">Not advice.<br/><em>Results.</em></h2>
+        <span class="about-tag">The Difference</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-stats reveal-l">
+          <div>
+            <div class="about-stat-n">10+</div>
+            <div class="about-stat-l">Years Combined Experience</div>
+          </div>
+          <div>
+            <div class="about-stat-n">MBA</div>
+            <div class="about-stat-l">IIFT Delhi</div>
+          </div>
+          <div>
+            <div class="about-stat-n">1</div>
+            <div class="about-stat-l">Standard — High Quality</div>
+          </div>
         </div>
 
         <div class="about-copy reveal-r">
@@ -121,20 +125,9 @@
             advisory services to a national party — every aspect of election
             management and strategy.
           </p>
-
-          <div class="stats stagger">
-            <div class="stat">
-              <div class="stat-n">360°</div>
-              <div class="stat-l">Advisory Coverage</div>
-            </div>
-            <div class="stat">
-              <div class="stat-n">0→1</div>
-              <div class="stat-l">Built from Scratch</div>
-            </div>
-          </div>
         </div>
-
       </div>
+
     </div>
   </section>
 
@@ -143,102 +136,116 @@
   ═══════════════════════════════════════════ -->
   <section class="services section-pad" id="services">
     <div class="wrap">
-      <p class="eyebrow reveal">What I Offer</p>
-      <p class="services-intro reveal">Three capabilities. One standard — high quality, every time.</p>
 
-      <div class="services-grid stagger">
+      <div class="services-hd reveal">
+        <span class="eyebrow">What I Offer</span>
+        <span class="services-count">03 Services</span>
+      </div>
 
-        <div class="s-card">
-          <div class="s-num">01</div>
-          <h3 class="s-title">Original Research</h3>
-          <p class="s-lead">Decision-ready research. Days, not months.</p>
-          <p class="s-desc">
+      <div class="service-row reveal">
+        <div class="service-num">01</div>
+        <div class="service-body">
+          <h3 class="service-title">Original Research</h3>
+          <p class="service-lead">Decision-ready research. Days, not months.</p>
+          <p class="service-desc">
             A clear answer to a specific question. No hedging, no filler,
             no background you didn't ask for. The right insight, delivered
             fast — typically within days — ready to act on.
           </p>
-          <p class="s-outcome">Leadership walks into rooms informed. Decisions get made on real data.</p>
         </div>
+        <p class="service-outcome">
+          Leadership walks into rooms informed. Decisions get made on real data.
+        </p>
+      </div>
 
-        <div class="s-card">
-          <div class="s-num">02</div>
-          <h3 class="s-title">Program Management</h3>
-          <p class="s-lead">Complex programs, end-to-end ownership.</p>
-          <p class="s-desc">
+      <div class="service-row reveal">
+        <div class="service-num">02</div>
+        <div class="service-body">
+          <h3 class="service-title">Program Management</h3>
+          <p class="service-lead">Complex programs, end-to-end ownership.</p>
+          <p class="service-desc">
             Milestones set. Teams aligned. Progress tracked. Blockers cleared.
             The program doesn't stall because someone isn't managing it —
             it runs because someone is.
           </p>
-          <p class="s-outcome">Workstreams that were stuck start moving. Deliverables land on time.</p>
         </div>
+        <p class="service-outcome">
+          Workstreams that were stuck start moving. Deliverables land on time.
+        </p>
+      </div>
 
-        <div class="s-card">
-          <div class="s-num">03</div>
-          <h3 class="s-title">Chief of Staff Support</h3>
-          <p class="s-lead">Senior leadership stays focused on what matters.</p>
-          <p class="s-desc">
+      <div class="service-row reveal">
+        <div class="service-num">03</div>
+        <div class="service-body">
+          <h3 class="service-title">Chief of Staff Support</h3>
+          <p class="service-lead">Senior leadership stays focused on what matters.</p>
+          <p class="service-desc">
             High-trust support that anticipates needs, absorbs operational
             complexity, and ensures the people who set direction aren't
             buried in the details.
           </p>
-          <p class="s-outcome">More bandwidth at the top. Fewer things falling through the cracks.</p>
         </div>
-
+        <p class="service-outcome">
+          More bandwidth at the top. Fewer things falling through the cracks.
+        </p>
       </div>
+
     </div>
   </section>
 
   <!-- ═══════════════════════════════════════════
        HOW I WORK
   ═══════════════════════════════════════════ -->
-  <section class="testimonials section-pad" id="process">
+  <section class="process section-pad" id="process">
     <div class="wrap">
-      <p class="eyebrow reveal">How I Work</p>
 
-      <div class="t-grid stagger">
+      <div class="process-hd reveal">
+        <p class="eyebrow">How I Work</p>
+        <h2 class="about-h2" style="margin-top:16px;">Three steps.<br/><em>No noise.</em></h2>
+      </div>
 
-        <div class="t-card">
-          <div class="s-num" style="font-size:56px; margin-bottom:20px;">01</div>
-          <h3 class="s-title" style="font-size:24px; margin-bottom:12px;">Brief &amp; Scope</h3>
-          <p class="t-text" style="font-style:normal; font-size:14px;">
+      <div class="process-grid">
+        <div class="process-card reveal">
+          <div class="process-n">01</div>
+          <h3 class="process-title">Brief &amp; Scope</h3>
+          <p class="process-text">
             Every engagement starts with a direct conversation — what's the situation,
             what outcome are we working toward, and by when. No discovery decks.
             No onboarding calls that go nowhere. Just clarity on what needs to happen.
           </p>
         </div>
 
-        <div class="t-card">
-          <div class="s-num" style="font-size:56px; margin-bottom:20px;">02</div>
-          <h3 class="s-title" style="font-size:24px; margin-bottom:12px;">Execute</h3>
-          <p class="t-text" style="font-style:normal; font-size:14px;">
+        <div class="process-card reveal">
+          <div class="process-n">02</div>
+          <h3 class="process-title">Execute</h3>
+          <p class="process-text">
             Research is delivered decision-ready. Programs are managed end to end.
             Leadership is supported without friction. The work gets done at the standard
             required — not the standard that's convenient.
           </p>
         </div>
 
-        <div class="t-card">
-          <div class="s-num" style="font-size:56px; margin-bottom:20px;">03</div>
-          <h3 class="s-title" style="font-size:24px; margin-bottom:12px;">Results, Not Reports</h3>
-          <p class="t-text" style="font-style:normal; font-size:14px;">
+        <div class="process-card reveal">
+          <div class="process-n">03</div>
+          <h3 class="process-title">Results, Not Reports</h3>
+          <p class="process-text">
             The measure is outcomes, not output. Decisions made. Programs unblocked.
             Leadership freed up to lead. This is what working with someone who has
             built from zero in a live political environment looks like.
           </p>
         </div>
-
       </div>
+
     </div>
   </section>
 
   <!-- ═══════════════════════════════════════════
-       CTA BAND (dark)
+       CTA BAND
   ═══════════════════════════════════════════ -->
-  <section class="cta-band">
+  <section class="cta-band" id="cta">
     <div class="wrap">
       <div class="cta-band-inner">
-
-        <div class="cta-band-copy reveal-l">
+        <div>
           <h2 class="cta-band-h">
             High-stakes work needs<br/><em>high-quality execution.</em>
           </h2>
@@ -248,16 +255,12 @@
             and leadership that's supported — this is the conversation to have.
           </p>
         </div>
-
-        <div class="cta-band-action reveal-r">
-          <a href="#contact" class="btn btn-dark">
-            Let's Talk
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2 8h12M9 3l5 5-5 5"/>
-            </svg>
-          </a>
-        </div>
-
+        <a href="#contact" class="btn-white">
+          Let's Talk
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 8h12M9 3l5 5-5 5"/>
+          </svg>
+        </a>
       </div>
     </div>
   </section>
@@ -269,19 +272,17 @@
     <div class="wrap">
       <div class="contact-grid">
 
-        <div class="contact-sticky reveal-l">
-          <p class="eyebrow">Let's Talk</p>
+        <div class="reveal-l">
           <h2 class="contact-h">Get in touch.<br/><em>Direct and fast.</em></h2>
           <p class="contact-sub">
             If the need is real, we move fast. Fill in the form and
             expect a response within 24 hours.
           </p>
-
           <div class="c-details">
             <div>
               <p class="c-detail-label">Email</p>
               <p class="c-detail-val">
-                <a href="mailto:hello@tarangkulkarni.com" style="color:inherit; border-bottom: 1px solid var(--border); padding-bottom:1px; transition: border-color .2s;">hello@tarangkulkarni.com</a>
+                <a href="mailto:hello@tarangkulkarni.com" style="color:inherit;">hello@tarangkulkarni.com</a>
               </p>
             </div>
             <div>
@@ -340,7 +341,7 @@
             </div>
 
             <div class="form-actions">
-              <button type="submit" class="btn btn-ink" id="submitBtn">
+              <button type="submit" class="btn-primary" id="submitBtn">
                 Send Message
                 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M2 8h12M9 3l5 5-5 5"/>
@@ -367,8 +368,8 @@
       <div class="footer-inner">
         <span class="footer-name">Tarang Kulkarni</span>
         <div class="footer-right">
-          <div>Political Consulting &mdash; New Delhi</div>
-          <div style="margin-top:4px">&copy; 2026. All rights reserved.</div>
+          hello@tarangkulkarni.com<br/>
+          New Delhi, India &mdash; &copy; 2026
         </div>
       </div>
     </div>
@@ -378,35 +379,13 @@
        SCRIPTS
   ═══════════════════════════════════════════ -->
   <script>
-    // ── Cursor ────────────────────────────────
-    const cur  = document.getElementById('cursor');
-    const ring = document.getElementById('cursorRing');
-    let mx = 0, my = 0, rx = 0, ry = 0;
-
-    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-
-    (function loop() {
-      cur.style.left  = mx + 'px';
-      cur.style.top   = my + 'px';
-      rx += (mx - rx) * 0.13;
-      ry += (my - ry) * 0.13;
-      ring.style.left = rx + 'px';
-      ring.style.top  = ry + 'px';
-      requestAnimationFrame(loop);
-    })();
-
-    document.querySelectorAll('a, button, input, textarea, select').forEach(el => {
-      el.addEventListener('mouseenter', () => { cur.classList.add('hover'); ring.classList.add('hover'); });
-      el.addEventListener('mouseleave', () => { cur.classList.remove('hover'); ring.classList.remove('hover'); });
-    });
-
-    // ── Nav scroll ────────────────────────────
+    // ── Nav scroll ──
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 48);
     }, { passive: true });
 
-    // ── Mobile nav ────────────────────────────
+    // ── Mobile nav ──
     const hbg   = document.getElementById('hamburger');
     const links = document.getElementById('navLinks');
     hbg.addEventListener('click', () => {
@@ -419,7 +398,7 @@
       links.classList.remove('open');
     }));
 
-    // ── Scroll reveal ─────────────────────────
+    // ── Scroll reveal ──
     const io = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
     }, { threshold: 0.12 });
@@ -435,15 +414,14 @@
       });
     });
 
-    // ── Contact form ──────────────────────────
-    const form    = document.getElementById('contactForm');
-    const success = document.getElementById('formSuccess');
+    // ── Contact form ──
+    const form      = document.getElementById('contactForm');
+    const success   = document.getElementById('formSuccess');
     const submitBtn = document.getElementById('submitBtn');
 
     form.addEventListener('submit', e => {
       e.preventDefault();
       let valid = true;
-
       ['fname', 'email', 'msg'].forEach(id => {
         const f = document.getElementById(id);
         if (!f.value.trim()) {
@@ -452,12 +430,9 @@
           f.addEventListener('input', () => f.classList.remove('form-error'), { once: true });
         }
       });
-
       if (!valid) return;
-
       submitBtn.disabled = true;
       submitBtn.style.opacity = '.5';
-
       setTimeout(() => {
         form.reset();
         submitBtn.style.display = 'none';
@@ -572,7 +547,7 @@
       flex-direction: column;
       align-items: flex-end;
       gap: 12px;
-      font-family: 'DM Sans', system-ui, sans-serif;
+      font-family: 'Barlow', sans-serif;
     }
 
     /* ── Launcher stack ── */
@@ -586,28 +561,26 @@
       display: flex; align-items: center; gap: 10px;
       border: none;
       padding: 14px 22px;
-      font-family: 'Syne', system-ui, sans-serif;
+      font-family: 'Barlow Condensed', sans-serif;
       font-size: 12px; font-weight: 700;
-      letter-spacing: .14em; text-transform: uppercase;
+      letter-spacing: .16em; text-transform: uppercase;
       cursor: pointer;
-      box-shadow: 0 4px 24px rgba(24,20,14,.22);
+      box-shadow: 0 4px 24px rgba(0,0,0,.4);
       transition: background .2s, transform .15s;
       white-space: nowrap;
     }
     #cw-toggle svg, #pw-toggle svg { width: 17px; height: 17px; flex-shrink: 0; }
-    /* Primary — ink */
-    #cw-toggle { background: #18140e; color: #f5f0e8; }
-    #cw-toggle:hover { background: #8c6e18; transform: translateY(-1px); }
-    /* Secondary — gold */
-    #pw-toggle { background: #8c6e18; color: #f5f0e8; }
-    #pw-toggle:hover { background: #7a5e12; transform: translateY(-1px); }
+    #cw-toggle { background: #181818; color: #f0ede4; border: 1px solid rgba(240,237,228,.08); }
+    #cw-toggle:hover { background: #242424; transform: translateY(-1px); }
+    #pw-toggle { background: #c42020; color: #fff; }
+    #pw-toggle:hover { background: #a31919; transform: translateY(-1px); }
 
     /* ── Shared panel base ── */
     #cw-panel, #pw-panel {
       width: 360px;
-      background: #f5f0e8;
-      border: 1px solid #ddd8cc;
-      box-shadow: 0 8px 48px rgba(24,20,14,.18);
+      background: #101010;
+      border: 1px solid rgba(240,237,228,.09);
+      box-shadow: 0 8px 48px rgba(0,0,0,.5);
       display: flex; flex-direction: column;
       overflow: hidden;
       opacity: 0;
@@ -623,69 +596,78 @@
     #cw-head {
       display: flex; align-items: center; justify-content: space-between;
       padding: 16px 18px;
-      background: #18140e;
-      color: #f5f0e8;
+      background: #080808;
+      border-bottom: 1px solid rgba(240,237,228,.07);
+      color: #f0ede4;
       flex-shrink: 0;
     }
     #cw-head-info { display: flex; align-items: center; gap: 12px; }
     #cw-avatar {
       width: 36px; height: 36px;
-      background: #8c6e18; color: #f5f0e8;
+      background: rgba(240,237,228,.1);
+      border: 1px solid rgba(240,237,228,.12);
+      color: #f0ede4;
       display: flex; align-items: center; justify-content: center;
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 14px; font-weight: 600; flex-shrink: 0;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 800; flex-shrink: 0;
+      letter-spacing: .05em;
     }
     #cw-name {
-      font-family: 'Syne', system-ui, sans-serif;
-      font-size: 13px; font-weight: 700; letter-spacing: .08em; color: #f5f0e8;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: #f0ede4;
     }
     #cw-status {
-      font-size: 11px; color: rgba(245,240,232,.5);
+      font-size: 11px; color: rgba(240,237,228,.4);
       display: flex; align-items: center; gap: 5px; margin-top: 2px;
     }
     #cw-dot { width: 6px; height: 6px; background: #7ec87e; border-radius: 50%; display: inline-block; }
     #cw-close, #pw-close {
-      background: none; border: none; color: rgba(245,240,232,.5);
+      background: none; border: none; color: rgba(240,237,228,.35);
       cursor: pointer; padding: 4px; display: flex; align-items: center; transition: color .2s;
     }
-    #cw-close:hover, #pw-close:hover { color: #f5f0e8; }
+    #cw-close:hover, #pw-close:hover { color: #f0ede4; }
     #cw-close svg, #pw-close svg { width: 14px; height: 14px; }
 
     /* ── Progress bar (proposal only) ── */
     #pw-progress-wrap {
-      background: #18140e;
+      background: #0e0e0e;
+      border-bottom: 1px solid rgba(240,237,228,.07);
       padding: 10px 18px 11px;
       flex-shrink: 0;
     }
     #pw-progress-top { margin-bottom: 7px; }
     #pw-progress-label {
-      font-family: 'Syne', system-ui, sans-serif;
-      font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
-      color: rgba(245,240,232,.5);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
+      color: rgba(240,237,228,.35);
     }
-    #pw-progress-label span { color: #f5f0e8; }
-    #pw-progress-track { height: 2px; background: rgba(245,240,232,.15); overflow: hidden; }
-    #pw-progress-bar { height: 100%; background: #8c6e18; width: 0%; transition: width .4s ease; }
+    #pw-progress-label span { color: #f0ede4; }
+    #pw-progress-track { height: 2px; background: rgba(240,237,228,.1); overflow: hidden; }
+    #pw-progress-bar { height: 100%; background: #c42020; width: 0%; transition: width .4s ease; }
 
     /* ── Proposal Header ── */
     #pw-head {
       display: flex; align-items: center; justify-content: space-between;
       padding: 14px 18px;
-      background: #8c6e18; color: #f5f0e8; flex-shrink: 0;
+      background: #c42020; color: #fff; flex-shrink: 0;
     }
     #pw-head-info { display: flex; align-items: center; gap: 12px; }
     #pw-avatar {
       width: 36px; height: 36px;
-      background: rgba(245,240,232,.18); color: #f5f0e8;
+      background: rgba(0,0,0,.2);
+      color: #fff;
       display: flex; align-items: center; justify-content: center;
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 14px; font-weight: 600; flex-shrink: 0;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 800; flex-shrink: 0;
+      letter-spacing: .05em;
     }
     #pw-name {
-      font-family: 'Syne', system-ui, sans-serif;
-      font-size: 13px; font-weight: 700; letter-spacing: .08em; color: #f5f0e8;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: #fff;
     }
-    #pw-status { font-size: 11px; color: rgba(245,240,232,.6); margin-top: 2px; }
+    #pw-status { font-size: 11px; color: rgba(255,255,255,.6); margin-top: 2px; }
 
     /* ── Messages ── */
     #cw-msgs, #pw-msgs {
@@ -697,11 +679,11 @@
     }
     #cw-msgs::-webkit-scrollbar, #pw-msgs::-webkit-scrollbar { width: 4px; }
     #cw-msgs::-webkit-scrollbar-track, #pw-msgs::-webkit-scrollbar-track { background: transparent; }
-    #cw-msgs::-webkit-scrollbar-thumb, #pw-msgs::-webkit-scrollbar-thumb { background: #ddd8cc; border-radius: 2px; }
+    #cw-msgs::-webkit-scrollbar-thumb, #pw-msgs::-webkit-scrollbar-thumb { background: rgba(240,237,228,.1); border-radius: 2px; }
     .cw-msg { max-width: 86%; padding: 10px 14px; font-size: 13.5px; line-height: 1.6; word-break: break-word; }
-    .cw-ai { background: #ece6d8; color: #18140e; border: 1px solid #ddd8cc; align-self: flex-start; }
-    .cw-user { background: #18140e; color: #f5f0e8; align-self: flex-end; }
-    .cw-error { background: #f9ede8; color: #8b3a2a; border: 1px solid #e8cdc6; align-self: flex-start; font-size: 13px; }
+    .cw-ai  { background: #181818; color: #f0ede4; border: 1px solid rgba(240,237,228,.08); align-self: flex-start; }
+    .cw-user { background: #c42020; color: #fff; align-self: flex-end; }
+    .cw-error { background: rgba(196,32,32,.08); color: #e05555; border: 1px solid rgba(196,32,32,.2); align-self: flex-start; font-size: 13px; }
 
     /* ── Typing indicator ── */
     #cw-typing, #pw-typing {
@@ -709,40 +691,42 @@
       padding: 10px 16px 4px; flex-shrink: 0;
     }
     #cw-typing span, #pw-typing span {
-      width: 6px; height: 6px; background: #c8c2b6;
+      width: 6px; height: 6px; background: rgba(240,237,228,.25);
       border-radius: 50%; animation: cwBounce 1.2s ease-in-out infinite;
     }
     #cw-typing span:nth-child(1), #pw-typing span:nth-child(1) { animation-delay: 0s; }
     #cw-typing span:nth-child(2), #pw-typing span:nth-child(2) { animation-delay: .2s; }
     #cw-typing span:nth-child(3), #pw-typing span:nth-child(3) { animation-delay: .4s; }
     @keyframes cwBounce {
-      0%, 60%, 100% { transform: translateY(0); opacity: .4; }
+      0%, 60%, 100% { transform: translateY(0); opacity: .3; }
       30%            { transform: translateY(-5px); opacity: 1; }
     }
 
     /* ── Input area ── */
     #cw-foot, #pw-foot {
       display: flex; align-items: center;
-      padding: 12px 14px; border-top: 1px solid #ddd8cc;
-      gap: 8px; flex-shrink: 0; background: #f5f0e8;
+      padding: 12px 14px; border-top: 1px solid rgba(240,237,228,.07);
+      gap: 8px; flex-shrink: 0; background: #101010;
     }
     #cw-input, #pw-input {
-      flex: 1; background: #ece6d8; border: 1px solid #ddd8cc; color: #18140e;
-      font-family: 'DM Sans', system-ui, sans-serif; font-size: 13.5px;
+      flex: 1; background: #181818;
+      border: 1px solid rgba(240,237,228,.09);
+      color: #f0ede4;
+      font-family: 'Barlow', sans-serif; font-weight: 300; font-size: 13.5px;
       padding: 10px 14px; outline: none; border-radius: 0;
-      transition: border-color .2s, box-shadow .2s; -webkit-appearance: none;
+      transition: border-color .2s; -webkit-appearance: none;
     }
-    #cw-input::placeholder, #pw-input::placeholder { color: #a09890; }
-    #cw-input:focus, #pw-input:focus { border-color: #8c6e18; box-shadow: 0 0 0 2px rgba(140,110,24,.1); }
-    #cw-input:disabled, #pw-input:disabled { opacity: .5; cursor: not-allowed; }
+    #cw-input::placeholder, #pw-input::placeholder { color: rgba(240,237,228,.22); }
+    #cw-input:focus, #pw-input:focus { border-color: #c42020; }
+    #cw-input:disabled, #pw-input:disabled { opacity: .4; cursor: not-allowed; }
     #cw-send, #pw-send {
-      width: 40px; height: 40px; background: #18140e; color: #f5f0e8;
+      width: 40px; height: 40px; background: #c42020; color: #fff;
       border: none; cursor: pointer;
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0; transition: background .2s;
     }
-    #cw-send:hover:not(:disabled), #pw-send:hover:not(:disabled) { background: #8c6e18; }
-    #cw-send:disabled, #pw-send:disabled { opacity: .4; cursor: not-allowed; }
+    #cw-send:hover:not(:disabled), #pw-send:hover:not(:disabled) { background: #a31919; }
+    #cw-send:disabled, #pw-send:disabled { opacity: .3; cursor: not-allowed; }
     #cw-send svg, #pw-send svg { width: 14px; height: 14px; }
 
     /* ── Mobile ── */
@@ -763,12 +747,12 @@
       /* ════════════════════════════════════════
          Q&A WIDGET
       ════════════════════════════════════════ */
-      const cwPanel  = document.getElementById('cw-panel');
-      const cwToggle = document.getElementById('cw-toggle');
-      const cwClose  = document.getElementById('cw-close');
-      const cwMsgs   = document.getElementById('cw-msgs');
-      const cwTyping = document.getElementById('cw-typing');
-      const cwInput  = document.getElementById('cw-input');
+      const cwPanel   = document.getElementById('cw-panel');
+      const cwToggle  = document.getElementById('cw-toggle');
+      const cwClose   = document.getElementById('cw-close');
+      const cwMsgs    = document.getElementById('cw-msgs');
+      const cwTyping  = document.getElementById('cw-typing');
+      const cwInput   = document.getElementById('cw-input');
       const cwSendBtn = document.getElementById('cw-send');
 
       let cwHistory = [], cwLoading = false;
@@ -929,5 +913,6 @@
 
     })();
   </script>
+
 </body>
 </html>
